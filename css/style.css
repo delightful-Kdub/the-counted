@@ -1,0 +1,30 @@
+#filters{
+  position: fixed;
+  left: 0;
+  top: 0;
+  float: left;
+  width: 15%;
+  height: 100%;
+  padding: 10px;
+  background-color: lightblue;
+  border-right: thick double #000000;
+}
+
+
+#mapVisualization{
+  position: absolute;
+  right: 0;
+  float: right;
+  width: 83%;
+  background-color: purple;
+}
+
+
+
+#monthSlider{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 83%;
+  background-color: pink;
+}

@@ -1,18 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link type="text/css" rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<title>Indy Study - The Counted</title>
 </head>
 
 <body>
 
+<div id="filters">
+<!--Race selection -->
+	<p>Race: <select id="raceInput" name="race">
+		<!--<option value="All">All</option>-->
+	  <option value="White">White</option>
+	  <option value="Black">Black</option>
+		<option value="Unknown">Unknown</option>
+	</select></p>
 
-<ul id="counted"></ul>
+	<h1 id="raceOutput"></h1><br/>
 
 
+<!--Gender selection -->
+	<p>Gender: <select id="sexInput" name="sex">
+		<!--<option value="All">All</option>-->
+	  <option value="Male">Male</option>
+	  <option value="Female">Female</option>
+		<option value="Unknown">Unknown</option>
+	</select></p>
 
+	<h1 id="sexOutput"></h1><br/>
+
+
+<!--Arms selection -->
+	<p>Armed with: <select id="armsInput" name="arms">
+		<!--<option value="All">All</option>-->
+		<option value="No">Nothing</option>
+		<option value="Firearm">Gun</option>
+		<option value="Knife">Knife</option>
+		<option value="Firearm">Gun</option>
+		<option value="Non-lethal firearm">Non-lethal firearm</option>
+		<option value="Vehicle">Vehicle</option>
+		<option value="Other">Other</option>
+		<option value="Disputed">Disputed</option>
+		<option value="Unkown">Unknown</option>
+	</select>:</p>
+
+	<h1 id="armsOutput"></h1><br/>
+
+
+<!--Age selection -->
+	<!--not sure what to put into the URL Query if I want to grab age ranges -->
+	<p>Age: <select id="ageInput" name="arms">
+		<!--<option value="All">All</option>-->
+	</select>:</p>
+
+	<h1 id="ageOutput"></h1>
+
+<button type="button">(button)</button>
+
+</div>
+
+<div id="mapVisualization">
+	<center>
+		<p>placeholder result:</p>
+
+		<h1 id="result"></h1>
+	</center>
+</div>
+
+<div id="monthSlider">
+	sss
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="js/script.js"></script>
